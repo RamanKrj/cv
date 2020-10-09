@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        a[href^="mailto"]::before {
+            content: "📧 ";
+        }
+        
+        a[href^="tel"]::before {
+            content: "📞 ";
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My Contact</h1>
+    <address>
+       Raman Kumar Jha<br>
+       4953, New Delhi, India<br>
+       <a href="tel+919818287466">(091)232322222</a><br>
+       <a href="mailto:ramahorama@gmail.com">ramahorama@gmail.com</a>
+    </address>
+    <br><br>
+    <form action="mailto:ramahorama@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Your Name :</label>
+        <input type="text" id="name" name="name" required minlength="30"><br>
+        <label for="email">Email Id   :</label>
+        <input type="email" id="email" name="email" required placeholder="abc@mail.com"><br>
+        <fieldset>
+            <legend>Gender :</legend>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male:</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br>
+        </fieldset>
+        <label for="freecopy">Get a free copy of our Services</label>
+        <input type="checkbox" id="freecopy" name="service">
+        <label for="contact">Contact Me :</label>
+        <input type="checkbox" id="contact" name="contact"><br>
+        <label for="phone">Phone No.:</label>
+        <input type="tel" name="phone" id="phone" pattern="[0-9]{10}"><br>
+        <label for="msg">Leave a message :</label><br>
+        <textarea name="msg" id="msg" cols="30" rows="10"></textarea><br>
+        <input type="submit" name="submit" value="Submit">
+        <input type="reset">
+    </form>
+</body>
+
+</html>

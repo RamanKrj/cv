@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <!DOCTYPE html> tells the browser to render the document as HTML5 doc. -->
+    <!--  The <meta> element defines metadata(data,information) abount an HTML document.
+   Metadata is used by the browser,search engin and other webservices. -->
+
+    <!-- Specifies character encoding for the html document. UTF-8 is the
+   standered encoding one should be using while working with html file -->
+    <meta charset="UTF-8">
+
+    <meta name="author" content="Raman Kr Jha" />
+
+    <!-- Describe contents of the web page -->
+    <meta name="description" content="Raman's Personal Information">
+
+    <!-- Setting the viewport to make the webpage looks good on all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- The another attribute http-equiv used to simulate HTTP header response
+    It can be useed to define certain setting that otherwise require
+    the use of a HTTP response header -->
+
+    <title>Raman's Personal Site</title>
+    <style>
+        #tbl th {
+            border: 1px solid #dddddd;
+            background-color: #f3c0c0;
+            padding: 5px;
+        }
+        
+        #tbl td {
+            border: 1px solid #dddddd;
+            padding: 5px;
+        }
+        
+        #skill td {
+            border: 2px solid #a9a9a9
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <td style="padding: 10px;"><img src="images/raman_pp.png" alt="Raman's profile picture" style="width:100px; height: 100px;"></td>
+            <td>
+                <h1>Raman Kumar Jha</h1>
+                <p><em>Founder and CTO of <strong>S.S.Infosolutions</strong>.</em></p>
+                <p>I'm a web developer and I provide sofware solutions to business people</p>
+            </td>
+        </tr>
+    </table>
+
+    <hr size="2" noshade>
+
+    <h3>Books and Teaching</h3>
+
+    <ul>
+        <li>Web Development Bootcamp
+            <ol type="I">
+                <li><a href="#">How does Internet actually work ?</a></li>
+                <li><a href="#">How do websites actually works ?</a></li>
+                <li><a href="#">Anatomy of HTML tag</a></li>
+            </ol>
+        </li>
+        <li>FreeCodeCamp
+            <ol start="A">
+                <li>HTML Basics</li>
+                <li>HTML Advance</li>
+                <li>CSS3</li>
+            </ol>
+        </li>
+        <li>Books
+            <ul>
+                <li>You don't know JS</li>
+                <li>MDN pdfs</li>
+            </ul>
+        </li>
+    </ul>
+    <hr size="3" noshade="">
+    <h3>Work Experience</h3>
+    <table id="tbl">
+        <thead>
+            <tr>
+                <th>Year</th>
+                <th>Work</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1998</td>
+                <td>Pennar Informatics</td>
+            </tr>
+            <tr>
+                <td>2001</td>
+                <td>S.S.Infosolution</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr size="3" noshade>
+    <h3>Skills</h3>
+    <table id="skill" style="border-collapse: collapse;">
+        <tr>
+            <td>Web Development ⭐⭐⭐</td>
+            <td>mySQL ⭐⭐⭐</td>
+        </tr>
+        <tr>
+            <td>Web Design ⭐⭐⭐</td>
+            <td>Communication skill ⭐⭐⭐</td>
+        </tr>
+    </table>
+    <hr size="3" noshade>
+    <h3>Know Me</h3>
+    <div>
+        <a href="myhobbies.html">My hobbies</a>
+    </div>
+    <div>
+        <a href="contactme.html">Contact Me</a>
+    </div>
+    <hr size="3" noshade>
+    <section>
+        <h3>Understanding Table</h3>
+        <ul>
+            <li><a href="tables/table-with-border.html">Table with border</a></li>
+            <li><a href="tables/simple-table.html">A Simple table</a></li>
+            <li><a href="tables/border-spacing.html">Table with Border spacing</a></li>
+            <li><a href="tables/table-span-cols.html">A Table cell that spans many columns</a></li>
+            <li><a href="tables/styling-table.html">Styling Table</a></li>
+            <li><a href="tables/school-time-table.html">School Time Table</a></li>
+        </ul>
+    </section>
+</body>
+
+</html>
